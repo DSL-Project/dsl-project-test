@@ -1,11 +1,9 @@
-import PeopleList from "./components/PeopleList";
-import ProjectsList from "./components/ProjectsList";
+import Home from "./Page/Home";
 
 function App() {
   return (
     <div className="App">
-      <ProjectsList/>
-      <PeopleList/>
+      <Home />
     </div>
   );
 }
