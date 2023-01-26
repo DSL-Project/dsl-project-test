@@ -1,0 +1,40 @@
+{
+  "PageTitle": [{
+    "page": "string",
+    "title": "string",
+    "description": "string"
+  }],
+  "ProjectList": [{
+    "title": "string",
+    "subHeading": "string",
+    "summary": "string",
+    "people(aka team from PeopleList)": [{"id": "number & string"}, {"id": "number & string"}, {"id": "number & string"}],
+    "publication(from PublicationList)": [{"id": "number & string"}, {"id": "number & string"}, {"id": "number & string"}],
+    "media": [{"url": "string"}, {"url": "string"}, {"url": "string"}],
+    "partners": [{"name": "string"}, {"name": "string"}, {"name": "string"}],
+    "funding": [{"name": "string"}, {"name": "string"}, {"name": "string"}],
+    "id": "combination of number & string from {sys.id}"
+  }],
+  "ProgramList": [{
+    "title": "string",
+    "description": "string",
+    "url": "string",
+    "id": "combination of number & string from {sys.id}"
+  }],
+  "PublicationList": [{
+    "type": "string",
+    "title": "string",
+    "people(aka authors from PeopleList separate list)": [{"id": "number & string"}, {"id": "number & string"}, {"id": "number & string"}],
+    "id": "combination of number & string from {sys.id}"
+  }],
+  "PeopleList": [{
+    "type": "string",
+    "name": "string",
+    "title": "string",
+    "profilePic": "media",
+    "intro": "string",
+    "website": "url/string",
+    "email": "string",
+    "id": "combination of number & string from {sys.id}"
+  }]
+}
