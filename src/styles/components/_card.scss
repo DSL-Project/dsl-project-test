@@ -1,0 +1,10 @@
+.card {
+  border: 1px solid black; //temporary styles
+  padding: 50px;
+  margin: 50px auto;
+  width: 80%;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

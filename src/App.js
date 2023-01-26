@@ -1,10 +1,12 @@
+import Card from "./UI/Card";
 
-import PeopleList from "./components/PeopleList";
-import ProjectsList from "./components/ProjectsList";
 
 function App() {
   return (
     <div className="App">
+      <Card>
+        <h1>Digital Society Lab</h1>
+      </Card>
       
     </div>
   );
