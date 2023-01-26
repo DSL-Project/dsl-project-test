@@ -19,7 +19,7 @@ const PageTitle = (props) => {
         })
 
         if (!!res) {
-          const items = res?.items.filter(item => item?.fields?.page === props.page).map(item => ({ title: item?.fields?.title, description: item?.fields?.description })) || [];
+          const items = res?.items.filter(item => item?.fields?.page === props.page).map(item => ({ title: item?.fields?.title, description: item?.fields?.description, url: item?.fields?.url, file: item?.fields?.asset?.fields?.file?.url, linkTitle: item?.fields?.linkTitle, id: item?.sys?.id })) || [];
           setPage(items);
           setLoading(false);
         }
@@ -48,10 +48,15 @@ const PageTitle = (props) => {
         :
           page.length !== 0
           ?
-            <>
+            <div className="wrapper">
               <h1 className="pageTitle">{page[0].title}</h1>
               <p className="pageDescription">{page[0].description}</p>
-            </>
+              {
+                page[0].url || page[0].file
+                ? <a href={page[0].url?page[0].url:page[0].file} target="_blank" rel="noreferrer" className="pageButton">{page[0].linkTitle}</a>
+                : null
+              }
+            </div>
           : null
       }
     </section>

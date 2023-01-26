@@ -1,0 +1,23 @@
+.pageTitleContainer {
+  background-color: beige;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .pageTitle,
+  .pageDescription {
+    display: block;
+    margin: 20px 0;
+  }
+  .pageButton {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: underline;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
